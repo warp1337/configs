@@ -74,7 +74,7 @@ theme.titlebar_maximized_button_focus_inactive  = theme_path .. "/titlebar/maxim
 theme.titlebar_maximized_button_normal_active = theme_path .. "/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = theme_path .. "/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = theme_path .. "/space-desktop.jpg"
+theme.wallpaper = theme_path .. "/aurora-desktop.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = theme_path .. "/layouts/fairhw.png"
