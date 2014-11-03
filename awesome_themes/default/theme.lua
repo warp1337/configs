@@ -6,7 +6,7 @@ theme = {}
 
 local theme_path =  "~/.config/awesome/themes/default"
 
-theme.font          = "sans 8"
+theme.font          = "sans 10"
 
 theme.bg_normal     = "#002b36"
 theme.bg_focus      = "#073642"
@@ -15,13 +15,13 @@ theme.bg_minimize   = "#657b83"
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#839496"
-theme.fg_focus      = "#b58900"
+theme.fg_focus      = "#0087b5"
 theme.fg_urgent     = "#dc322f"
 theme.fg_minimize   = "#839496"
 
 theme.border_width  = 1
 theme.border_normal = "#073642"
-theme.border_focus  = "#b58900"
+theme.border_focus  = "#0087b5"
 theme.border_marked = "#dc322f"
 
 -- There are other variable sets
@@ -43,7 +43,7 @@ theme.taglist_squares_unsel = theme_path .. "/taglist/squarew.png"
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = theme_path .. "/submenu.png"
 theme.menu_height = 15
-theme.menu_width  = 100
+theme.menu_width  = 130
 
 -- You can add as many variables as
 -- you wish and access them by using
