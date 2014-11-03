@@ -6,7 +6,7 @@ theme = {}
 
 local theme_path =  "~/.config/awesome/themes/default"
 
-theme.font          = "sans 10"
+theme.font          = "sans 8"
 
 theme.bg_normal     = "#002b36"
 theme.bg_focus      = "#073642"
@@ -74,7 +74,7 @@ theme.titlebar_maximized_button_focus_inactive  = theme_path .. "/titlebar/maxim
 theme.titlebar_maximized_button_normal_active = theme_path .. "/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = theme_path .. "/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = theme_path .. "/background.png"
+theme.wallpaper = theme_path .. "/space-desktop.jpg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = theme_path .. "/layouts/fairhw.png"
