@@ -6,14 +6,17 @@ awful.util = require("awful.util")
 
 theme = {}
 
+print("HEEELOOOOO")
+
 -- possible layouts are: "10ich","large","1920",""
-conky_layout = "" 
+conky_layout = "1920" 
 
 home          = os.getenv("HOME")
 config        = awful.util.getdir("config")
-shared        = "/usr/share/awesome"
+shared        = "/usr/local/share/awesome"
 if not awful.util.file_readable(shared .. "/icons/awesome16.png") then
-    shared    = "/usr/share/local/awesome"
+    shared    = "/usr/share/awesome/"
+    print( "Shared\n" )
 end
 sharedicons   = shared .. "/icons"
 sharedthemes  = shared .. "/themes"
@@ -21,28 +24,30 @@ themes        = config .. "/themes"
 themename     = "/niceandclean"
 if not awful.util.file_readable(themes .. themename .. "/theme.lua") then
 	themes = sharedthemes
+	print( "Using sharedthemes not actual config\n" )
 end
 themedir = themes .. themename
-
-wallpaper1    = themedir .. "/background.jpg"
-wallpaper2    = themedir .. "/background.png"
-wallpaper3    = sharedthemes .. "/zenburn/zenburn-background.png"
-wallpaper4    = sharedthemes .. "/default/background.png"
-wpscript      = home .. "/.wallpaper"
+wallpaper1    = themedir .. "/numix_aurora.png"
+wallpaper2    = themedir .. "/background-large.jpg"
+wallpaper3    = sharedthemes .. "/default/background.png"
+wallpaper4    = sharedthemes .. "/default/background_white.png"
 wpscript2     = themedir .. "/niceandclean.sh"
 
 if awful.util.file_readable(wpscript2) then
 	theme.wallpaper_cmd = { "sh " .. wpscript2 .. " " .. conky_layout }
+	print( "Running SH\n" )
 elseif awful.util.file_readable(wallpaper1) then
 	theme.wallpaper_cmd = { "awsetbg " .. wallpaper1 }
+	print( "Wall 1\n" )
 elseif awful.util.file_readable(wallpaper2) then
 	theme.wallpaper_cmd = { "awsetbg " .. wallpaper2 }
-elseif awful.util.file_readable(wpscript) then
-	theme.wallpaper_cmd = { "sh " .. wpscript }
+        print( "Wall 2\n" )
 elseif awful.util.file_readable(wallpaper3) then
 	theme.wallpaper_cmd = { "awsetbg " .. wallpaper3 }
+        print( "Wall 3\n" )
 else
 	theme.wallpaper_cmd = { "awsetbg " .. wallpaper4 }
+        print( "Wall 4\n" )
 end
 
 if awful.util.file_readable(config .. "/vain/init.lua") then
