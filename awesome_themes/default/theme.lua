@@ -76,6 +76,10 @@ theme.titlebar_maximized_button_focus_active  = theme_path .. "/titlebar/maximiz
 
 theme.wallpaper = theme_path .. "/aurora-desktop.png"
 
+-- Conky
+wpscript      = theme_path .. "/niceandclean.sh"
+theme.wallpaper_cmd = { "sh " .. wpscript .. " " .. 1920 }
+
 -- You can use your own layout icons like this:
 theme.layout_fairh = theme_path .. "/layouts/fairhw.png"
 theme.layout_fairv = theme_path .. "/layouts/fairvw.png"
