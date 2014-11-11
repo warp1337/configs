@@ -1,6 +1,6 @@
 configs
 =======
 
-These are my personal config files and OS (Linux) tweaks.
+These are my personal config files and desktop tweaks for the AWESOME WINDOW MANAGER (3.5.5)
 
-Feel free to use them!
+Feel free to use them! ;)
