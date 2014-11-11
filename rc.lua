@@ -78,7 +78,7 @@ local layouts =
 -- {{{ Wallpaper
 if beautiful.wallpaper then
     for s = 1, screen.count() do
-        gears.wallpaper.fit(beautiful.wallpaper, s, "#073642")
+       gears.wallpaper.fit(beautiful.wallpaper, s, "#073642")
     end
 end
 -- }}}
